@@ -1,0 +1,18 @@
+from random import randint, choice
+from string import ascii_letters, digits, punctuation
+
+# Input for length of the password
+print("Enter the desired length of the password:")
+L3ngth = int(input())
+
+# Random character pools
+L3tt3rs = ascii_letters
+D1g1ts = digits
+Sym80ls = punctuation
+
+# Combine pools for password generation
+Ch@r_P00l = L3tt3rs + D1g1ts + Sym80ls
+
+# Generate password
+P@ssw0rd = ''.join(choice(Ch@r_P00l) for _ in range(L3ngth))
+print("Generated Password:", P@ssw0rd)
